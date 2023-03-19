@@ -1,0 +1,408 @@
+// variables
+@use "../variables";
+
+// **********************************
+//              Home
+// **********************************
+
+// hero slider
+.new-features-slider {
+  position: relative;
+
+  .slider-title {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    left: 0%;
+    top: 28%;
+    text-transform: uppercase;
+
+    h3 {
+      @include FontStyle($size: 24px, $line: 28px, $weight: 600);
+      color: #ffffff;
+
+      &::after {
+        background-color: #ffffff;
+        width: 50px;
+        height: 3px;
+        content: "";
+        display: block;
+        margin: 10px auto 20px;
+      }
+    }
+
+    h1 {
+      @include FontStyle($size: 76px, $line: 80px, $weight: 700);
+      color: #ffffff;
+    }
+  }
+
+  .slider-right-button {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 46%;
+    right: 49px;
+    z-index: 1;
+
+    span {
+      svg {
+        font-size: 32px;
+        font-weight: 600;
+        fill: #ffffff;
+      }
+    }
+  }
+
+  .slider-left-button {
+    width: 25px;
+    height: 44px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 46%;
+    left: 49px;
+    z-index: 1;
+
+    span {
+      svg {
+        font-size: 32px;
+        font-weight: 600;
+        fill: #ffffff;
+      }
+    }
+  }
+
+  // slick dots
+  .slick-dots {
+    bottom: 18px !important;
+
+    li {
+      button {
+        &::before {
+          font-size: 16px !important;
+          color: #ffffff !important;
+          opacity: 1 !important;
+        }
+      }
+    }
+
+    li.slick-active {
+      button {
+        &::before {
+          color: #000000 !important;
+        }
+      }
+    }
+  }
+}
+
+// slider card
+.slider-card-wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .slider-card-container {
+    background: transparent
+      linear-gradient(180deg, #00000000 0%, #00000066 42%, #00000066 100%) 0% 0%
+      no-repeat padding-box;
+    height: 700px;
+    padding: 16px 16px 80px 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.1s;
+    transition-duration: 0.3s;
+    transition-property: all;
+
+    // &:hover {
+    //   background: transparent;
+    //   transition: 0.1s;
+    //   transition-duration: 0.3s;
+    //   transition-property: all;
+    // }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+
+      .card-category {
+        @include FontStyle($size: 30px, $line: 32px, $weight: 300);
+        color: #ffffff;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .card-title {
+        @include FontStyle($size: 35px, $line: 45px, $weight: 600);
+        color: #ffffff;
+        text-transform: capitalize;
+      }
+
+      .card-description {
+        @include FontStyle($size: 18px, $line: 42px, $weight: 400);
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+// filters
+.news-features-filters {
+  padding: 0 16px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  overflow: auto;
+  overflow-x: auto;
+
+  .primary-filter {
+    p {
+      font-size: 17px;
+      font-weight: 600;
+    }
+  }
+}
+
+.news-features-cards {
+  h2 {
+    @include FontStyle($size: 40px, $line: 18px, $weight: 500);
+    color: #000000;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+}
+
+// responsive
+@include responsive(tablet) {
+  .new-features-slider {
+    .slider-title {
+      top: 25%;
+
+      h3 {
+        @include FontStyle($size: 20px, $line: 24px, $weight: 600);
+
+        &::after {
+          margin: 5px auto 10px;
+        }
+      }
+
+      h1 {
+        @include FontStyle($size: 40px, $line: 44px, $weight: 700);
+      }
+    }
+
+    .slider-right-button {
+      width: 20px;
+      height: 20px;
+      right: 26px;
+
+      span {
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .slider-left-button {
+      width: 20px;
+      height: 20px;
+      left: 10px;
+
+      span {
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+
+    // slick dots
+    .slick-dots {
+      bottom: 12px !important;
+
+      li {
+        button {
+          &::before {
+            font-size: 10px !important;
+          }
+        }
+      }
+
+      li.slick-active {
+        button {
+          &::before {
+            color: #000000 !important;
+          }
+        }
+      }
+    }
+
+    // slider card
+    .slider-card-wrapper {
+      .slider-card-container {
+        height: 450px;
+        padding: 16px 16px 50px 60px;
+
+        .card-content {
+          .card-category {
+            @include FontStyle($size: 14px, $line: 16px, $weight: 300);
+          }
+
+          .card-title {
+            @include FontStyle($size: 20px, $line: 24px, $weight: 600);
+          }
+
+          .card-description {
+            @include FontStyle($size: 14px, $line: 22px, $weight: 400);
+          }
+        }
+      }
+    }
+  }
+
+  // filters
+  .news-features-filters {
+    padding: 0 16px 24px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    .primary-filter {
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        min-width: 122px;
+      }
+    }
+  }
+
+  .news-features-cards {
+    h2 {
+      @include FontStyle($size: 24px, $line: 28px, $weight: 600);
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+@include responsive(mobile) {
+  .new-features-slider {
+    .slider-title {
+      top: 16%;
+
+      h3 {
+        @include FontStyle($size: 18px, $line: 20px, $weight: 600);
+        color: #ffffff;
+
+        &::after {
+          margin: 5px auto 10px;
+        }
+      }
+
+      h1 {
+        @include FontStyle($size: 28px, $line: 32px, $weight: 700);
+      }
+    }
+
+    .slider-right-button {
+      width: 20px;
+      height: 20px;
+      right: 26px;
+
+      span {
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .slider-left-button {
+      width: 20px;
+      height: 20px;
+      left: 10px;
+
+      span {
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+
+    // slick dots
+    .slick-dots {
+      bottom: 12px !important;
+
+      li {
+        button {
+          &::before {
+            font-size: 10px !important;
+          }
+        }
+      }
+
+      li.slick-active {
+        button {
+          &::before {
+            color: #000000 !important;
+          }
+        }
+      }
+    }
+
+    // slider card
+    .slider-card-wrapper {
+      .slider-card-container {
+        height: 450px;
+        padding: 16px 16px 50px;
+
+        .card-content {
+          .card-category {
+            @include FontStyle($size: 14px, $line: 16px, $weight: 300);
+          }
+
+          .card-title {
+            @include FontStyle($size: 20px, $line: 24px, $weight: 600);
+          }
+
+          .card-description {
+            @include FontStyle($size: 14px, $line: 22px, $weight: 400);
+          }
+        }
+      }
+    }
+  }
+
+  // filters
+  .news-features-filters {
+    padding: 0 16px 24px 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    .primary-filter {
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        min-width: 122px;
+      }
+    }
+  }
+
+  .news-features-cards {
+    h2 {
+      @include FontStyle($size: 24px, $line: 28px, $weight: 600);
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+  }
+}

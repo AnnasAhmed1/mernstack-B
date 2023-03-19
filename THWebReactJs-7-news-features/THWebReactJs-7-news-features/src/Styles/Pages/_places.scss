@@ -1,0 +1,48 @@
+.filterHeader {
+  display: flex;
+  flex-direction: row;
+  // width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+}
+.filterByUae {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  h2 {
+    // letter-spacing: 1.05px;
+    color: #9f9f9f;
+    // @include FontStyle($size: 18px, $weight: normal);
+    font-size: clamp(0.8rem, 1.1vw, 1.5rem);
+    font-weight: normal;
+
+    margin-right: 2%;
+  }
+}
+.filterByEmr {
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  // padding: 6px 7px;
+  // div{
+  //   border: 0  !important;
+  //   padding: 0 !important;
+  //   height: auto !important;
+  // }
+}
+.ant-space-item {
+  color: #000000;
+  @include FontStyle($size: 15px, $weight: 800);
+}
+
+.hero-slider-detail-places-wrapper {
+  position: relative;
+  // width: 650px;
+  margin: auto;
+}

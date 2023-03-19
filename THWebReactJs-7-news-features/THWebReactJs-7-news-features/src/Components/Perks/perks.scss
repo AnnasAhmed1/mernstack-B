@@ -1,0 +1,77 @@
+.perks-main-container {
+  h1 {
+    font-family: Neutraface Text;
+    font-size: clamp(1.5rem, 7vh, 2rem);
+    font-weight: bolder;
+    padding-left: 10%;
+    margin: 20px 0;
+  }
+
+  .hero-sliderPerks {
+    .slick-track {
+      margin-bottom: 15px;
+    }
+  }
+
+  .perk-card {
+    box-shadow: 0px 4px 15px #0000001a;
+    margin:0 10px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    position: relative;
+    // height: 280px;
+    // max-width: 350px;
+    div {
+      padding: 4% 3%;
+      p:nth-child(1) {
+        font-size: clamp(0.6rem, 2.4vh, 1.3rem);
+        letter-spacing: 0.22px;
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+      p:nth-child(2) {
+        font-size: clamp(0.4rem, 2vh, 1rem);
+        letter-spacing: 0.84px;
+        font-weight: 500;
+      }
+      p:nth-last-child(1) {
+        font-size: clamp(0.4rem, 2vh, 1rem);
+        letter-spacing: 0.84px;
+        font-weight: 500;
+        // position: absolute;
+        // bottom: 8px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+  .perks-addition-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5%;
+    justify-content: center;
+    gap: 10px;
+    .perk-card {
+      margin-right: 0;
+      margin-bottom: 10px;
+      max-width: 32%;
+    }
+  }
+  @media (max-width: 992px) {
+    .perks-addition-container {
+      .perk-card {
+        max-width: 45%;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .perks-addition-container {
+      .perk-card {
+        max-width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+// variables
+@use "../variables";
+
+// **********************************
+//              About
+// **********************************
+
+// meet the team component
+
+.team-wrapper {
+  background: #f1f1f1;
+  padding: 90px 0 76px;
+  margin-bottom: 90px;
+
+  h1 {
+    @include FontStyle($size: 70px, $line: 60px, $weight: 600);
+    color: #000000;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .team-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    img {
+      width: 70px;
+      height: 70px;
+    }
+
+    .team-content {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+
+      h3 {
+        @include FontStyle($size: 20px, $line: 20px, $weight: 600);
+        color: #000000;
+      }
+
+      p {
+        @include FontStyle($size: 16px, $line: 20px, $weight: 500);
+        color: #000000;
+      }
+
+      .social-contacts {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+.aboutUs {
+  p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif !important;
+  }
+  // p:nth-child(2) {
+  //   margin-bottom: 0;
+  // }
+
+}
+.largeLetter {
+  font-size: 100px;
+  font-family: "Neutraface Text";
+  font-weight: 700;
+  padding: 0px 15px 10px 0;
+  display: inline-block;
+  line-height: 74px;
+  float: left;
+}

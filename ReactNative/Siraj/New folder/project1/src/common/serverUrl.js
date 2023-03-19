@@ -1,0 +1,1 @@
+export const cloud_function_server_url = 'https://us-central1-beep-452f3.cloudfunctions.net';

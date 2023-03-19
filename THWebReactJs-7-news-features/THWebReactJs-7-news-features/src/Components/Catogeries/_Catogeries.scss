@@ -1,0 +1,166 @@
+.Catogeries-filters {
+  padding: 0 16px 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  overflow: auto;
+  overflow-x: auto;
+}
+
+.content-filter {
+  background: #ffffff !important;
+  border-radius: 30px !important;
+  border: 1px solid #000000;
+  text-align: center;
+  height: 40px;
+  padding: 11px 20px 9px 20px;
+  cursor: pointer;
+  @include DisplayStyle();
+  transition: 0.1s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  h1 {
+    @include FontStyle($size: 17px, $weight: 600);
+    white-space: nowrap;
+  }
+  &:hover {
+    background: #000000 !important;
+    color: #ffffff !important;
+    transition: 0.1s;
+    transition-duration: 0.3s;
+    transition-property: all;
+  }
+}
+.catActive {
+  background: #000000 !important;
+  color: #ffffff !important;
+  transition: 0.1s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  // &:hover {
+  //   color: #000000 !important;
+  //   background: #ffffff !important;
+  //   transition: 0.1s;
+  //   transition-duration: 0.3s;
+  //   transition-property: all;
+  // }
+}
+
+.Cusineh1 {
+  text-align: center;
+  // @include FontStyle($size: 27px, $weight: medium);
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  letter-spacing: 1.57px;
+  color: #000000;
+}
+
+.CusineSearch-filters {
+  // padding: 0 16px;
+  // display: inline-flex;
+  /* align-items: center; */
+  // justify-content: center;
+  row-gap: 10px;
+  // display: flex;
+  // flex-direction: column;
+
+  // overflow-x: hidden;
+
+  // flex-wrap: wrap;
+  // flex-shrink: 1/;
+  // flex-basis: 10;
+  // flex-grow: 2;
+  // width: 80%;
+  margin: auto;
+  margin-top: 15px;
+  max-height: 213px;
+  overflow-y: auto;
+  // overflow-x: hidden;
+  // transform: rotate(-90deg);
+  display: flex;
+  // transform-origin: right top;
+  max-height: 240px;
+  // overflow-y: scroll;
+  // overflow-wrap: ;
+  // overflow-inline: scroll;
+  width: 100%;
+  // background-color: #000000;
+}
+.CusineSearch-filter {
+  // transform: rotate(90deg);
+  // transform-origin: right top;
+  // display: inline-block !important;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  background: #ebebeb 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  // border: 2px solid #000000;
+  text-align: center;
+  height: 40px;
+  padding: 11px 20px 9px 20px;
+  width: fit-content;
+
+  cursor: pointer;
+  // @include DisplayStyle();
+  transition: 0.1s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  h1 {
+    @include FontStyle($size: 17px, $weight: normal);
+  }
+  &:hover {
+    background: #000000 !important;
+    color: #ffffff !important;
+    transition: 0.1s;
+    transition-duration: 0.3s;
+    transition-property: all;
+  }
+}
+.CusineSearchActive {
+  background: #000000 !important;
+  color: #ffffff !important;
+  transition: 0.1s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  // &:hover {
+  //   color: #000000 !important;
+  //   background: #ffffff !important;
+  //   transition: 0.1s;
+  //   transition-duration: 0.3s;
+  //   transition-property: all;
+  // }
+}
+
+.filterButton {
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 15px 20px;
+  span {
+    @include FontStyle($size: 17px, $weight: 600);
+    color: #000000;
+  }
+}
+
+//filters scroll
+
+.react-horizontal-scrolling-menu--wrapper {
+  // width: 90% !important;
+  margin: 2% auto;
+}
+.react-horizontal-scrolling-menu--separator {
+  padding-right: 1%;
+}
+.react-horizontal-scrolling-menu--item {
+  &:focus-visible {
+    outline: none !important;
+  }
+}
+.react-horizontal-scrolling-menu--arrow-left,
+.react-horizontal-scrolling-menu--arrow-right {
+  position: relative;
+}

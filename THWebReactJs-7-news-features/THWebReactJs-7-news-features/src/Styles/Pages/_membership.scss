@@ -1,0 +1,114 @@
+// variables
+@use "../variables";
+
+// ***************************************
+//              Memberships
+// ***************************************
+
+// cards benefits modal
+.benefits-modal {
+  .ant-modal-content {
+    border-radius: 20px !important;
+  }
+
+  .ant-modal-close {
+    &:hover {
+      background: transparent !important;
+    }
+
+    .ant-modal-close-x {
+      span {
+        svg {
+          fill: #000000;
+        }
+      }
+    }
+  }
+
+  .modal-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 48px;
+
+    img {
+      width: 82px;
+      height: 82px;
+    }
+
+    h2 {
+      @include FontStyle($size: 26px, $line: 32px, $weight: 600);
+      color: #000000;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    p {
+      @include FontStyle($size: 18px, $line: 21px, $weight: 500);
+      color: #000000;
+    }
+  }
+
+  .modal-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 40px 0;
+
+    .benefit {
+      background: #f9f9fc 0% 0% no-repeat padding-box;
+      border: 1px solid #e0e0e2;
+      border-radius: 24px;
+      padding: 10px 26px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      span {
+        @include FontStyle($size: 16px, $weight: 500);
+        color: #000000;
+      }
+    }
+  }
+
+  .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 22px;
+  }
+}
+
+// best of dubai and UAE section
+.best-section-wrapper {
+  background-color: #ffffff;
+
+  .section-content {
+    padding: 90px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 110px;
+
+    img {
+      width: 45%;
+    }
+
+    .text-content {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        @include FontStyle($size: 45px, $line: 54px, $weight: 600);
+        color: #000000;
+      }
+
+      p {
+        @include FontStyle($size: 20px, $line: 30px, $weight: 500);
+        color: #0a0a0a;
+        text-transform: capitalize;
+        margin: 40px 0 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+// variables
+@use "./variables";
+
+// *************************************************
+//                      Mixins
+// *************************************************
+
+@mixin FontStyle($size: 16px, $line: 18px, $weight: 400) {
+  font-size: $size !important;
+  line-height: $line !important;
+  font-weight: $weight !important;
+}
+
+@mixin DisplayStyle($display: flex, $align: center, $justify: center) {
+  display: $display !important;
+  align-items: $align !important;
+  justify-content: $justify !important;
+}
+
+//responsive mixin
+@mixin responsive($device) {
+  @if $device == big-screen {
+    @media only screen and (max-width: 1920px) {
+      @content;
+    }
+  }
+  @if $device == medium-screen {
+    @media only screen and (max-width: 1400px) {
+      @content;
+    }
+  }
+  @if $device == small-screen {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $device == tablet-portrait {
+    @media only screen and (max-width: 992px) {
+      @content;
+    }
+  }
+  @if $device == tablet {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $device == mobile {
+    @media only screen and (max-width: 576px) {
+      @content;
+    }
+  }
+}

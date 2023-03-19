@@ -1,0 +1,29 @@
+.policy-comp-container {
+  padding: 4% 8%;
+  h1 {
+    font-weight: bold;
+    font-size: clamp(2.5rem, 8.5vh, 3rem);
+    font-family: Neutraface Text;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  section {
+    display: flex;
+    gap: 5%;
+  }
+  p {
+    font-family: Poppins;
+    font-size: clamp(0.8rem, 2.25vh, 1.25rem);
+    margin: 4% 0;
+    letter-spacing: 0.35px;
+  }
+}
+@media (max-width: 768px) {
+  .policy-comp-container {
+    section {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+}

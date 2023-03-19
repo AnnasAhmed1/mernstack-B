@@ -1,0 +1,21 @@
+// Default
+@import "./Styles/reset";
+@import "./Styles/variables";
+@import "./Styles/mixin";
+@import "./Styles/typography";
+@import "./Styles/common";
+@import "./Styles/default";
+@import "./Styles/button";
+
+// component
+@import "./Components/Catogeries/Catogeries";
+// Pages
+@import "./Styles/Pages/layout";
+@import "./Styles/Pages/home";
+@import "./Styles/Pages/places";
+@import "./Styles/Pages/newsFeatures";
+@import "./Styles/Pages/about";
+@import "./Styles/Pages/membership";
+@import "./Styles/Pages/faq";
+
+@import "./Styles/Responsive.scss"

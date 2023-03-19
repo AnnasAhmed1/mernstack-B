@@ -1,0 +1,605 @@
+// variables
+@use "../variables";
+
+// **********************************
+//              Home
+// **********************************
+
+// filters
+.home-filters {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+  overflow: auto;
+  overflow-x: auto;
+}
+
+// hero slider
+.hero-slider {
+  position: relative;
+
+  .slider-title {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    left: 0;
+    top: 30%;
+    text-transform: uppercase;
+
+    h3 {
+      @include FontStyle($size: 24px, $line: 28px, $weight: 600);
+      color: #ffffff;
+
+      &::after {
+        background-color: #ffffff;
+        width: 50px;
+        height: 3px;
+        content: "";
+        display: block;
+        margin: 10px auto 20px;
+      }
+    }
+
+    h1 {
+      @include FontStyle($size: 76px, $line: 80px, $weight: 700);
+      color: #ffffff;
+    }
+  }
+}
+
+.hero-card-wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .hero-card-container {
+    background: rgba(0, 0, 0, 0.5);
+    height: 780px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.1s;
+    transition-duration: 0.3s;
+    transition-property: all;
+
+    &:hover {
+      background: transparent;
+      transition: 0.1s;
+      transition-duration: 0.3s;
+      transition-property: all;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+
+      .card-category {
+        @include FontStyle($size: 16px, $line: 20px, $weight: 400);
+        color: #ffffff;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .card-title {
+        @include FontStyle($size: 30px, $line: 36px, $weight: 600);
+        color: #ffffff;
+        text-transform: capitalize;
+      }
+
+      .card-description {
+        @include FontStyle($size: 14px, $weight: 400);
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+// guides section
+.card-section-wrapper {
+  margin: 90px 0;
+
+  .card-section-title {
+    @include DisplayStyle(
+      $display: flex,
+      $align: center,
+      $justify: space-between
+    );
+    padding: 0 0 25px;
+
+    h2 {
+      @include FontStyle($size: 40px, $line: 30px, $weight: 500);
+      text-transform: uppercase;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      @include FontStyle($size: 18px, $weight: 500);
+      text-transform: uppercase;
+      color: #333333;
+    }
+  }
+
+  .card-section-content-slider {
+    display: none;
+  }
+}
+
+// Huntrs Editors Picks Section
+.editors-picks-wrapper {
+  margin: 50px 0;
+  padding: 50px 0;
+  background-color: #f3f3f3;
+
+  h2 {
+    @include FontStyle($size: 50px, $line: 58px, $weight: 700);
+    color: #000000;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+}
+
+// featured email
+.ant-notification-notice-close {
+  svg {
+    font-size: 18px;
+  }
+}
+
+.featured-email-container {
+  .featured-title {
+    padding-left: 60px;
+    margin: 48px 0 20px;
+
+    h1 {
+      @include FontStyle($size: 36px, $line: 44px, $weight: 700);
+      color: #000000;
+
+      .featured-img {
+        display: flex;
+        align-items: flex-end;
+        @include FontStyle($size: 36px, $line: 44px, $weight: 700);
+      }
+
+      img {
+        width: 50px;
+        margin-right: 16px;
+        margin-left: 60px;
+      }
+
+      span {
+        @include FontStyle($size: 36px, $line: 44px, $weight: 700);
+        color: #000000;
+      }
+    }
+  }
+
+  h2 {
+    @include FontStyle($size: 16px, $weight: 500);
+    margin-bottom: 36px;
+    text-align: right;
+  }
+
+  .email-input {
+    width: 100% !important;
+    background-color: transparent !important;
+    padding-left: 0 !important;
+  }
+
+  .send-btn {
+    top: 250px;
+    left: 267px;
+  }
+
+  .ant-checkbox-wrapper {
+    border-color: #000000 !important;
+
+    &:hover {
+      border-color: #000000 !important;
+    }
+  }
+
+  .ant-checkbox-wrapper-checked {
+    border-color: #000000 !important;
+
+    &:hover {
+      border-color: #000000 !important;
+    }
+  }
+
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+
+    &:hover {
+      border-color: #000000 !important;
+    }
+  }
+
+  .ant-checkbox-input {
+    border-color: #000000 !important;
+
+    &:hover {
+      border-color: #000000 !important;
+    }
+  }
+
+  .ant-checkbox .ant-checkbox-inner {
+    &:hover {
+      border-color: #000000 !important;
+    }
+  }
+}
+
+// responsive
+// @include responsive(small-screen) {
+//   .hero-slider {
+//     .slider-title {
+//       left: 11%;
+//     }
+//   }
+// }
+
+@include responsive(tablet) {
+  .hero-slider {
+    margin-top: 0;
+
+    .slider-title {
+      h3 {
+        @include FontStyle($size: 20px, $line: 24px, $weight: 600);
+
+        &::after {
+          margin: 5px auto 10px;
+        }
+      }
+
+      h1 {
+        @include FontStyle($size: 40px, $line: 44px, $weight: 700);
+      }
+    }
+
+    .hero-card-wrapper {
+      .hero-card-container {
+        height: 600px;
+        padding: 16px;
+
+        .card-content {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+
+          .card-category {
+            @include FontStyle($size: 14px, $line: 16px, $weight: 400);
+          }
+
+          .card-title {
+            @include FontStyle($size: 20px, $line: 24px, $weight: 600);
+          }
+
+          .card-description {
+            @include FontStyle($size: 14px, $line: 22px, $weight: 400);
+          }
+        }
+      }
+    }
+
+    // slick dots
+    .slick-dots {
+      bottom: 12px !important;
+
+      li {
+        button {
+          &::before {
+            font-size: 8px !important;
+            color: #ffffff !important;
+            opacity: 1 !important;
+          }
+        }
+      }
+
+      li.slick-active {
+        button {
+          &::before {
+            color: #000000 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .home-filters {
+    margin-top: 20px;
+    padding-bottom: 24px;
+  }
+
+  .primary-filter {
+    height: 36px;
+  }
+
+  .card-section-wrapper {
+    margin: 26px 0;
+
+    .card-section-title {
+      padding-bottom: 16px;
+
+      h2 {
+        @include FontStyle($size: 24px, $line: 28px, $weight: 500);
+        text-transform: uppercase;
+      }
+
+      a {
+        @include FontStyle($size: 15px, $weight: 500);
+      }
+    }
+
+    .card-section-content {
+      display: none;
+    }
+
+    .card-section-content-slider {
+      display: block;
+      position: relative;
+
+      .slider-right-button {
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 46%;
+        right: 16px;
+        z-index: 1;
+
+        span {
+          svg {
+            font-size: 18px;
+            font-weight: 600;
+            fill: #ffffff;
+          }
+        }
+      }
+
+      .slider-left-button {
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 46%;
+        left: 4px;
+        z-index: 1;
+
+        span {
+          svg {
+            font-size: 18px;
+            font-weight: 600;
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  .editors-picks-wrapper {
+    margin: 20px 0;
+    padding: 20px 0;
+
+    h2 {
+      @include FontStyle($size: 24px, $line: 28px, $weight: 600);
+      margin-bottom: 20px;
+    }
+  }
+
+  // featured notification
+  .ant-notification-notice {
+    width: 260px !important;
+    height: 352px !important;
+  }
+
+  .featured-email-container {
+    .featured-title {
+      padding-left: 60px;
+      margin: 30px 0 20px;
+
+      h1 {
+        @include FontStyle($size: 26px, $line: 30px, $weight: 700);
+        color: #000000;
+
+        .featured-img {
+          display: flex;
+          align-items: flex-end;
+          @include FontStyle($size: 26px, $line: 26px, $weight: 700);
+        }
+
+        img {
+          width: 44px;
+          margin-right: 10px;
+          margin-left: 41px;
+        }
+
+        span {
+          @include FontStyle($size: 26px, $line: 26px, $weight: 700);
+          color: #000000;
+        }
+      }
+    }
+
+    h2 {
+      margin-bottom: 32px;
+    }
+
+    .send-btn {
+      top: 209px;
+      left: 205px;
+    }
+  }
+}
+
+@include responsive(mobile) {
+  .hero-slider {
+    margin-top: 10px;
+
+    .slider-title {
+      top: 24%;
+
+      h3 {
+        @include FontStyle($size: 18px, $line: 20px, $weight: 600);
+
+        &::after {
+          margin: 5px auto 10px;
+        }
+      }
+
+      h1 {
+        @include FontStyle($size: 28px, $line: 32px, $weight: 700);
+      }
+    }
+
+    .hero-card-wrapper {
+      .hero-card-container {
+        height: 450px;
+        padding: 16px 16px 50px;
+
+        .card-content {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+
+          .card-category {
+            @include FontStyle($size: 14px, $line: 16px, $weight: 400);
+          }
+
+          .card-title {
+            @include FontStyle($size: 20px, $line: 24px, $weight: 600);
+          }
+
+          .card-description {
+            @include FontStyle($size: 14px, $line: 22px, $weight: 400);
+          }
+        }
+      }
+    }
+
+    // slick dots
+    .slick-dots {
+      bottom: 12px !important;
+
+      li {
+        button {
+          &::before {
+            font-size: 8px !important;
+            color: #ffffff !important;
+            opacity: 1 !important;
+          }
+        }
+      }
+
+      li.slick-active {
+        button {
+          &::before {
+            color: #000000 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .home-filters {
+    margin-top: 20px;
+    padding-bottom: 24px;
+    padding-left: 348px;
+  }
+
+  .primary-filter {
+    height: 36px;
+  }
+
+  .card-section-wrapper {
+    margin: 30px 0;
+
+    .card-section-title {
+      padding-bottom: 16px;
+
+      h2 {
+        @include FontStyle($size: 24px, $line: 28px, $weight: 500);
+        text-transform: uppercase;
+      }
+
+      a {
+        @include FontStyle($size: 15px, $weight: 500);
+      }
+    }
+
+    .card-section-content {
+      display: none;
+    }
+
+    .card-section-content-slider {
+      display: block;
+    }
+  }
+
+  .editors-picks-wrapper {
+    margin: 20px 0;
+    padding: 20px 0;
+
+    h2 {
+      @include FontStyle($size: 24px, $line: 28px, $weight: 600);
+      margin-bottom: 20px;
+    }
+  }
+
+  // featured notification
+  .ant-notification-notice {
+    width: 260px !important;
+    height: 352px !important;
+  }
+
+  .featured-email-container {
+    .featured-title {
+      padding-left: 60px;
+      margin: 30px 0 20px;
+
+      h1 {
+        @include FontStyle($size: 26px, $line: 30px, $weight: 700);
+        color: #000000;
+
+        .featured-img {
+          display: flex;
+          align-items: flex-end;
+          @include FontStyle($size: 26px, $line: 26px, $weight: 700);
+        }
+
+        img {
+          width: 44px;
+          margin-right: 10px;
+          margin-left: 41px;
+        }
+
+        span {
+          @include FontStyle($size: 26px, $line: 26px, $weight: 700);
+          color: #000000;
+        }
+      }
+    }
+
+    h2 {
+      margin-bottom: 32px;
+    }
+
+    .send-btn {
+      top: 209px;
+      left: 205px;
+    }
+  }
+}

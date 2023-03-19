@@ -1,0 +1,40 @@
+@include responsive(tablet-portrait) {
+  .Usps-container {
+    section {
+      min-height: 200px;
+      p {
+        margin-right: 0;
+        width: fit-content;
+      }
+    }
+  }
+}
+@include responsive(tablet) {
+  .place-details-container {
+    > h1 {
+      font-size: clamp(2rem, 3vw, 2.5rem) !important;
+    }
+  }
+  .Usps-container {
+    section {
+      height: 300px !important;
+    }
+  }
+}
+@include responsive(mobile) {
+  .place-details-container {
+    > h1 {
+      font-size: clamp(1.5rem, 2.5vw, 2rem) !important;
+    }
+    .aboutUs {
+      p {
+        font-size: 14px !important;
+      }
+    }
+  }
+  .Usps-container {
+    section {
+      height: auto !important;
+    }
+  }
+}

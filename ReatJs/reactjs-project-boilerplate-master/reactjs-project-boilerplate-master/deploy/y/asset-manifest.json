@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d51b2b72.css",
+    "main.js": "/static/js/main.d52165a2.js",
+    "static/js/787.3b1b5c65.chunk.js": "/static/js/787.3b1b5c65.chunk.js",
+    "static/media/backgroundImage.png": "/static/media/backgroundImage.e1010516e0190ec97ffa.png",
+    "static/media/section2_man_image.png": "/static/media/section2_man_image.27c2f72d351707cddecb.png",
+    "static/media/hallImage.png": "/static/media/hallImage.55ac12218aa8b148451f.png",
+    "static/media/section1_man_image.png": "/static/media/section1_man_image.db53b7c5d3566b5d2617.png",
+    "static/media/Rectangle540-hotel.png": "/static/media/Rectangle540-hotel.b5cf73a9dbde15d7aae8.png",
+    "static/media/CircularStd-Light.otf": "/static/media/CircularStd-Light.4a1a0bfcc3a53847a945.otf",
+    "static/media/Rectangle545-CardBS.png": "/static/media/Rectangle545-CardBS.8f8ea4340a140ae433fb.png",
+    "static/media/car_4.png": "/static/media/car_4.f284841e6e52560b0647.png",
+    "static/media/Rectangle547-CardBS.png": "/static/media/Rectangle547-CardBS.ca3e744fdfc15d3c44fa.png",
+    "static/media/CircularStd-Medium.ttf": "/static/media/CircularStd-Medium.f9f2be1512962ebe2bdc.ttf",
+    "static/media/CircularStd-Book.ttf": "/static/media/CircularStd-Book.8dd9b00439575cc09ae4.ttf",
+    "static/media/Img_3_Car.png": "/static/media/Img_3_Car.dd3a8c492b8abde26d34.png",
+    "static/media/bagArrowImage.png": "/static/media/bagArrowImage.173b153712d3fbbc25be.png",
+    "static/media/travelManagementImage.png": "/static/media/travelManagementImage.8bd55ad01f69ada006f4.png",
+    "static/media/car_2.png": "/static/media/car_2.e4d6a5028f118cb5a5b7.png",
+    "static/media/car_5.png": "/static/media/car_5.0eadcebb41b9a16a0885.png",
+    "static/media/employEngagementImage.png": "/static/media/employEngagementImage.d91dc0c971a2f8dd31ed.png",
+    "static/media/Ellipse18-CardBS.png": "/static/media/Ellipse18-CardBS.6e9f7bfae241048514f8.png",
+    "static/media/Ellipse17-CardBS.png": "/static/media/Ellipse17-CardBS.1f673680e30378912174.png",
+    "static/media/Ellipse20-CardBS.png": "/static/media/Ellipse20-CardBS.1533013149ad6f878382.png",
+    "static/media/Ellipse19-CardBS.png": "/static/media/Ellipse19-CardBS.37385655c962a35e0f50.png",
+    "static/media/mark-home.JPG": "/static/media/mark-home.248a12fee6269694f6ad.JPG",
+    "index.html": "/index.html",
+    "main.d51b2b72.css.map": "/static/css/main.d51b2b72.css.map",
+    "main.d52165a2.js.map": "/static/js/main.d52165a2.js.map",
+    "787.3b1b5c65.chunk.js.map": "/static/js/787.3b1b5c65.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d51b2b72.css",
+    "static/js/main.d52165a2.js"
+  ]
+}

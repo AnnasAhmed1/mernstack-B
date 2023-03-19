@@ -1,0 +1,43 @@
+// variables
+@use "../variables";
+
+// **********************************
+//              FAQ's
+// **********************************
+
+.faq-wrapper {
+  h1 {
+    @include FontStyle($size: 60px, $line: 60px, $weight: 600);
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    margin: 90px 0;
+    text-align: center;
+  }
+
+  .faq-collapse {
+    .ant-collapse {
+      .ant-collapse-header-text {
+        @include FontStyle($size: 18px, $line: 24px, $weight: 500);
+        font-family: "Poppins", sans-serif;
+        color: #000000;
+      }
+
+      .ant-collapse-content-box {
+        p {
+          @include FontStyle($size: 16px, $line: 26px, $weight: 400);
+          font-family: "Poppins", sans-serif;
+          color: #000000;
+        }
+      }
+
+      .ant-collapse-expand-icon {
+        span {
+          svg {
+            font-size: 16px !important;
+            fill: #000000 !important;
+          }
+        }
+      }
+    }
+  }
+}

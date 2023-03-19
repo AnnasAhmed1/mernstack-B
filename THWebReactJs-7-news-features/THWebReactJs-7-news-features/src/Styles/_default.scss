@@ -1,0 +1,73 @@
+// ****************************************************************************
+//              Default Classes (Overwriting the default classes)
+// ****************************************************************************
+
+// slick slider default classes
+.slick-prev {
+  display: none !important;
+}
+
+.slick-next {
+  display: none !important;
+}
+
+// .slick-prev:before,
+// .slick-next:before {
+//   display: none;
+// }
+.p-relative{
+  position: relative;
+}
+
+// responsive menu
+.ant-menu,
+.ant-menu-root,
+.ant-menu-inline,
+.ant-menu-light {
+  border-inline-end: none !important;
+}
+
+.ant-menu {
+  .ant-menu-submenu {
+    border-bottom: 1px solid #b1b1b1 !important;
+    border-radius: 0 !important;
+  }
+
+  .ant-menu-submenu-title {
+    padding: 0 0 0 8px !important;
+
+    &:active {
+      background-color: #ffffff !important;
+    }
+
+    .ant-menu-title-content {
+      a {
+        @include FontStyle($size: 19px, $line: 25px, $weight: 600);
+        color: #000000;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .ant-menu-inline {
+    .ant-menu-item-only-child {
+      height: 26px;
+      padding: 0 10px !important;
+
+      &:first-child {
+        margin-top: 10px !important;
+      }
+
+      &:last-child {
+        margin-bottom: 10px !important;
+      }
+
+      .ant-menu-title-content {
+        a {
+          @include FontStyle($size: 16px, $weight: 400);
+          color: #000000;
+        }
+      }
+    }
+  }
+}
